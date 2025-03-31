@@ -1,11 +1,7 @@
 import "./Colors.css";
 import "./App.css";
 
-import MovementHeader from "./components/MovementHeader";
-import GalleryWall from "./components/GalleryWall/GalleryWall";
-import Box from "./components/Box/Box";
 import Movements from "./data/Movements";
-import BasicInfo from "./components/BasicInfo/BasicInfo";
 
 import ImageView from "./components/ImageView/ImageView";
 import MovementProps from "./utils/MovementProps";

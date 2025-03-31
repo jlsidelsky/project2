@@ -1,17 +1,17 @@
 import Direction from "../../utils/Directions";
 import MovementProps from "../../utils/MovementProps";
-import BasicInfo from "../BasicInfo/BasicInfo";
+
 import Box from "../Box/Box";
-import GalleryWall from "../GalleryWall/GalleryWall";
+// import GalleryWall from "../GalleryWall/GalleryWall";
 import styles from "./ImageView.module.css";
-import Arrow from "../../assets/arrow.svg?react";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+// import Arrow from "../../assets/arrow.svg?react";
+import { useEffect, useRef, useState } from "react";
 import ArtistBubble from "../ArtistBubble/ArtistBubble";
 import ArtInfo from "../../utils/ArtInfo";
 // import GalleryWallSubstitute from "../GalleryWall/GalleryWallSubstitue";
 import GalleryWall2 from "../GalleryWall/GalleryWall2";
 
-const directions: Direction[] = ["left", "right", "up", "down"];
+// const directions: Direction[] = ["left", "right", "up", "down"];
 
 interface ImageViewProps {
   movement: MovementProps;
@@ -24,8 +24,8 @@ interface ImageViewProps {
 const ImageView = ({
   movement,
   move,
-  direction,
-  trigger,
+  // direction,
+  // trigger,
   className,
 }: ImageViewProps) => {
   const paragraphs = movement.text.split("\n");
@@ -94,14 +94,8 @@ const ImageView = ({
     };
   }, []);
 
-  // useEffect(() => {
-  //   // This code runs whenever the "movement" prop changes
-  //   console.log("Movement prop changed:", movement);
-  //   // You can call any function here
-  //   setImageMode((prevMode) => true);
-  // }, [movement]);
-
-  const [animate, setAnimate] = useState(false);
+  // const [animate, setAnimate] = useState(false);
+  const animate = false;
   const [hover, setHover] = useState<ArtInfo | null>(null);
   useEffect(() => {
     // This code runs whenever the "movement" prop changes
@@ -110,26 +104,19 @@ const ImageView = ({
     }
   }, [imageMode]);
 
-  const setImageHover = (info: ArtInfo | null) => {
-    if (info && !imageMode) {
-      setHover(null);
-    } else {
-      setHover(info);
-    }
-  };
+  // const setImageHover = (info: ArtInfo | null) => {
+  //   if (info && !imageMode) {
+  //     setHover(null);
+  //   } else {
+  //     setHover(info);
+  //   }
+  // };
   return (
     <div
       className={`${styles.container} ${styles[className]}`}
       ref={containerRef}
       style={{}}
     >
-      {/* <button
-        style={{ position: "fixed", top: 100, cursor: "pointer", zIndex: 10 }}
-        onClick={() => setAnimate(!animate)}
-      >
-        {animate ? "play" : "pause"}
-      </button> */}
-
       <div
         style={{ position: "absolute", display: "flex", flexFlow: "column" }}
       >
@@ -172,13 +159,6 @@ const ImageView = ({
         height={movement.height}
         hide={!imageMode}
       />
-      {/* <GalleryWallSubstitute
-        className={imageMode ? styles.show : styles.hide}
-        height={movement.height}
-        width={movement.width}
-        img={movement.image}
-        hide={!imageMode}
-      /> */}
 
       <div>
         <img src="" alt="" />

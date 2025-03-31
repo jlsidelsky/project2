@@ -1,10 +1,11 @@
 /// <reference types="vite-plugin-svgr/client" />
 
-import React, {
-  useEffect,
+import {
+  //  React,
+  // useEffect,
   useLayoutEffect,
-  useMemo,
-  useRef,
+  // useMemo,
+  // useRef,
   useState,
 } from "react";
 // import Movements from "../data/Movements";

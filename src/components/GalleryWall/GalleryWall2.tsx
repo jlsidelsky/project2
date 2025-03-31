@@ -1,22 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from "react";
-import GalleryFrame from "../../utils/GalleryFrameProps";
-import styles from "./GalleryWall.module.css";
-import MovementProps from "../../utils/MovementProps";
-import ArtInfo from "../../utils/ArtInfo";
-
-interface Position {
-  x: number;
-  y: number;
-}
-
-interface Positions {
-  [id: string]: Position;
-}
-
-interface ContainerDimensions {
-  width: number;
-  height: number;
-}
+import { useLayoutEffect, useState } from "react";
 
 interface GalleryWall2Props extends React.HTMLAttributes<HTMLDivElement> {
   img: string;
@@ -33,14 +15,9 @@ const GalleryWall2 = ({
 
   ...props
 }: GalleryWall2Props) => {
-  const [positions, setPositions] = useState<Positions>({});
-  const [containerDimensions, setContainerDimensions] =
-    useState<ContainerDimensions>({ width: width, height: height });
+  const containerDimensions = { width: width, height: height };
 
   // Now, compute the bounding box for all frames.
-
-  const containerWidth = width;
-  const containerHeight = height;
 
   // Shift positions so that the bounding box top-left is at (0,0)
 
@@ -48,9 +25,6 @@ const GalleryWall2 = ({
 
   useLayoutEffect(() => {
     const updateScale = () => {
-      const rootFontSize = parseFloat(
-        getComputedStyle(document.documentElement).fontSize
-      );
       const available = window.innerHeight - 313.5 - 33.5 + 2.5 - 33;
       setAvailableHeight(available);
       console.log(available);

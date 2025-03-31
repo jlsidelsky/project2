@@ -1,5 +1,3 @@
-import GalleryFrame from "./GalleryFrameProps";
-
 interface MovementProps {
   id: string;
   title: string; //serves as unique id
@@ -7,7 +5,7 @@ interface MovementProps {
   start: number;
   end: number;
   artists: string[];
-  // images: GalleryFrame[];
+
   image: string;
   height: number;
   width: number;
