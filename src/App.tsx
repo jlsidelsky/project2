@@ -6,7 +6,7 @@ import GalleryWall from "./components/GalleryWall/GalleryWall";
 import Box from "./components/Box/Box";
 import Movements from "./data/Movements";
 import BasicInfo from "./components/BasicInfo/BasicInfo";
-import InfoView from "./components/InfoView/InfoView";
+
 import ImageView from "./components/ImageView/ImageView";
 import MovementProps from "./utils/MovementProps";
 import { useCallback, useEffect, useRef, useState } from "react";
