@@ -1,0 +1,362 @@
+:root {
+  font-family: "owners", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--primary);
+  --gap: 0.75rem;
+
+  --body-height: calc(100vh - 4rem - 48px - 12px);
+}
+/* font-weight: <weight>;
+font-style: normal;
+font-variation-settings: "wdth" 100; */
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  place-items: left;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+button {
+  color: var(--primary);
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+h1 {
+  font-family: "Owners Narrow";
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 75%;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+}
+h6 {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  /* line-height: 100%;  */
+}
+
+/* Kepler Std Light
+font-family: "kepler-std", serif;
+font-weight: 300;
+font-style: normal;
+Kepler Std Light Italic
+font-family: "kepler-std", serif;
+font-weight: 300;
+font-style: italic;
+Kepler Std Regular
+font-family: "kepler-std", serif;
+font-weight: 400;
+font-style: normal;
+Kepler Std Italic
+font-family: "kepler-std", serif;
+font-weight: 400;
+font-style: italic;
+Kepler Std Medium
+font-family: "kepler-std", serif;
+font-weight: 500;
+font-style: normal;
+Kepler Std Medium Italic
+font-family: "kepler-std", serif;
+font-weight: 500;
+font-style: italic;
+Kepler Std Semibold
+font-family: "kepler-std", serif;
+font-weight: 600;
+font-style: normal;
+Kepler Std Semibold Italic
+font-family: "kepler-std", serif;
+font-weight: 600;
+font-style: italic;
+Kepler Std Bold
+font-family: "kepler-std", serif;
+font-weight: 700;
+font-style: normal;
+Kepler Std Bold Italic
+font-family: "kepler-std", serif;
+font-weight: 700;
+font-style: italic;
+Kepler Std Black
+font-family: "kepler-std", serif;
+font-weight: 900;
+font-style: normal;
+Kepler Std Black Italic
+font-family: "kepler-std", serif;
+font-weight: 900;
+font-style: italic;
+Kepler Std Light Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 300;
+font-style: normal;
+Kepler Std Light Italic Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 300;
+font-style: italic;
+Kepler Std Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 400;
+font-style: normal;
+Kepler Std Italic Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 400;
+font-style: italic;
+Kepler Std Medium Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 500;
+font-style: normal;
+Kepler Std Medium Italic Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 500;
+font-style: italic;
+Kepler Std Semibold Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 600;
+font-style: normal;
+Kepler Std Semibold Italic Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 600;
+font-style: italic;
+Kepler Std Bold Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 700;
+font-style: normal;
+Kepler Std Bold Italic Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 700;
+font-style: italic;
+Kepler Std Black Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 900;
+font-style: normal;
+Kepler Std Black Italic Caption
+font-family: "kepler-std-caption", serif;
+font-weight: 900;
+font-style: italic;
+Kepler Std Light Display
+font-family: "kepler-std-display", serif;
+font-weight: 300;
+font-style: normal;
+Kepler Std Light Italic Display
+font-family: "kepler-std-display", serif;
+font-weight: 300;
+font-style: italic;
+Kepler Std Display
+font-family: "kepler-std-display", serif;
+font-weight: 400;
+font-style: normal;
+Kepler Std Italic Display
+font-family: "kepler-std-display", serif;
+font-weight: 400;
+font-style: italic;
+Kepler Std Medium Display
+font-family: "kepler-std-display", serif;
+font-weight: 500;
+font-style: normal;
+Kepler Std Medium Italic Display
+font-family: "kepler-std-display", serif;
+font-weight: 500;
+font-style: italic;
+Kepler Std Semibold Display
+font-family: "kepler-std-display", serif;
+font-weight: 600;
+font-style: normal;
+Kepler Std Semibold Italic Display
+font-family: "kepler-std-display", serif;
+font-weight: 600;
+font-style: italic;
+Kepler Std Bold Display
+font-family: "kepler-std-display", serif;
+font-weight: 700;
+font-style: normal;
+Kepler Std Bold Italic Display
+font-family: "kepler-std-display", serif;
+font-weight: 700;
+font-style: italic;
+Kepler Std Black Display
+font-family: "kepler-std-display", serif;
+font-weight: 900;
+font-style: normal;
+Kepler Std Black Italic Display
+font-family: "kepler-std-display", serif;
+font-weight: 900;
+font-style: italic;
+Kepler Std Light Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 300;
+font-style: normal;
+Kepler Std Light Italic Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 300;
+font-style: italic;
+Kepler Std Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 400;
+font-style: normal;
+Kepler Std Italic Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 400;
+font-style: italic;
+Kepler Std Medium Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 500;
+font-style: normal;
+Kepler Std Medium Italic Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 500;
+font-style: italic;
+Kepler Std Semibold Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 600;
+font-style: normal;
+Kepler Std Semibold Italic Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 600;
+font-style: italic;
+Kepler Std Bold Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 700;
+font-style: normal;
+Kepler Std Bold Italic Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 700;
+font-style: italic;
+Kepler Std Black Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 900;
+font-style: normal;
+Kepler Std Black Italic Subhead
+font-family: "kepler-std-subhead", serif;
+font-weight: 900;
+font-style: italic;
+Kepler Std Light Condensed Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 300;
+font-style: normal;
+Kepler Std Light Condensed Italic Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 300;
+font-style: italic;
+Kepler Std Condensed Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 400;
+font-style: normal;
+Kepler Std Condensed Italic Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 400;
+font-style: italic;
+Kepler Std Medium Condensed Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 500;
+font-style: normal;
+Kepler Std Medium Condensed Italic Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 500;
+font-style: italic;
+Kepler Std Semibold Condensed Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 600;
+font-style: normal;
+Kepler Std Semibold Condensed Italic Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 600;
+font-style: italic;
+Kepler Std Bold Condensed Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 700;
+font-style: normal;
+Kepler Std Bold Condensed Italic Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 700;
+font-style: italic;
+Kepler Std Black Condensed Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 900;
+font-style: normal;
+Kepler Std Black Condensed Italic Display
+font-family: "kepler-std-condensed-display", serif;
+font-weight: 900;
+font-style: italic;
+Kepler Std Light Condensed Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 300;
+font-style: normal;
+Kepler Std Light Condensed Italic Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 300;
+font-style: italic;
+Kepler Std Condensed Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 400;
+font-style: normal;
+Kepler Std Condensed Italic Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 400;
+font-style: italic;
+Kepler Std Medium Condensed Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 500;
+font-style: normal;
+Kepler Std Medium Condensed Italic Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 500;
+font-style: italic;
+Kepler Std Semibold Condensed Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 600;
+font-style: normal;
+Kepler Std Semibold Condensed Italic Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 600;
+font-style: italic;
+Kepler Std Bold Condensed Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 700;
+font-style: normal;
+Kepler Std Bold Condensed Italic Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 700;
+font-style: italic;
+Kepler Std Black Condensed Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 900;
+font-style: normal;
+Kepler Std Black Condensed Italic Subhead
+font-family: "kepler-std-condensed-subhead", serif;
+font-weight: 900;
+font-style: italic; */

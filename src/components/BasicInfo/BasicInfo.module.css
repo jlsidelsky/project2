@@ -1,0 +1,14 @@
+.rowOne {
+  display: flex;
+  flex-flow: row;
+  gap: var(--gap);
+}
+.rowOne > div {
+  flex: 1;
+}
+.artistsDiv {
+  display: flex;
+  flex-flow: row;
+  gap: 8px;
+  overflow-x: auto;
+}

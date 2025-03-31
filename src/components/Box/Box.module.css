@@ -1,0 +1,23 @@
+.container {
+  border: 1.5px solid var(--primary);
+  display: flex;
+  flex-flow: column;
+  /* transition: ; */
+  box-sizing: border-box;
+}
+.container > div:first-child {
+  border-bottom: 1.5px solid var(--primary);
+  height: 33.5px;
+  box-sizing: border-box;
+}
+container > div:last-child {
+  height: 40.5px;
+  box-sizing: border-box;
+  /* transition: height 1s; */
+}
+.container > div {
+  padding: 8px;
+  display: flex;
+  text-align: left;
+  box-sizing: border-box;
+}

@@ -1,0 +1,64 @@
+/* #root {
+
+  width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+} */
+#root {
+  /* min-width: 1000px; */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  gap: var(--gap);
+  /* box-sizing: border-box; */
+
+  /* display: grid;
+  grid-template-columns: 224px 1fr 48px;
+  grid-template-rows: 1fr 48px;
+
+  gap: var(--gap); */
+  display: grid;
+  grid-template-columns: 256px 1fr 96px;
+  grid-template-rows: 1fr 48px;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+
+  /* Let rows auto-size based on content */
+}
+#rightArrows {
+  display: flex;
+  flex-flow: column;
+  gap: var(--gap);
+  align-items: center;
+  justify-content: center;
+}
+#downArrow {
+  transform: rotate(180deg);
+}
+#bottomArrows {
+  grid-column: 2;
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+  justify-content: center;
+}
+
+#leftArrow {
+  transform: rotate(-90deg);
+}
+#rightArrow {
+  transform: rotate(90deg);
+}
+.arrow-button {
+  height: 32px;
+  width: 32px;
+}

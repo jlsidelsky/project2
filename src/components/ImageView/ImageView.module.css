@@ -1,0 +1,189 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap);
+  /* height: calc(100vh - 4em - 48px - 8px); */
+  transition: height 1s;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out, height 1s ease-in-out;
+}
+
+.down-1 {
+  animation: slideOutUp 1s forwards;
+}
+.down-2 {
+  animation: slideInUp 1s forwards;
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.up-1 {
+  animation: slideOutDown 1s forwards;
+}
+.up-2 {
+  animation: slideInDown 1s forwards;
+}
+
+@keyframes slideOutDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.left-1 {
+  animation: slideOutLeft 1s forwards;
+}
+.left-2 {
+  animation: slideInLeft 1s forwards;
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.right-1 {
+  animation: slideOutRight 1s forwards;
+}
+.right-2 {
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* 
+
+Outgoing animations
+.slideOutUp {
+  transform: translateY(-100%);
+}
+.slideOutDown {
+  transform: translateY(100%);
+}
+
+
+.slideInFromBottom {
+  animation: slideInFromBottom 1s forwards;
+}
+
+
+.slideInFromTop {
+  animation: slideInFromTop 1s forwards;
+}
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+} */
+
+.container > div {
+  align-self: stretch;
+}
+
+.titleContainer {
+  position: relative;
+}
+.imageTitleContainer > h1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.imageTitleContainer {
+  flex: 1;
+  overflow: hidden;
+}
+.bottomArrows {
+  position: relative;
+  top: 12px;
+}
+
+textP {
+  text-indent: 2em;
+  margin-bottom: var(--gap);
+}
+
+.show {
+  transition: height 1s, top 1s, opacity 1s;
+}
+.hide {
+  opacity: 0;
+  transition: height 1s 1s, top 1s 1s, opacity 1s 1s;
+}
+@keyframes example {
+  to {
+    display: none;
+  }
+}
+
+.rowOne {
+  display: flex;
+  flex-flow: row;
+  gap: var(--gap);
+}
+.rowOne > div {
+  flex: 1;
+}
+.artistsDiv {
+  display: flex;
+  flex-flow: row;
+  gap: 8px;
+}
