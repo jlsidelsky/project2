@@ -108,7 +108,7 @@ function App() {
           />
         </button>
       </div>
-      <p>sjkldfm</p>
+
       {/* other UI elements */}
     </>
   );
