@@ -1,25 +1,25 @@
 import MovementProps from "../utils/MovementProps";
 
-import romanticismImage from "../assets/romanticism.png";
-import realismImage from "../assets/realism.png";
-import expressionismImage from "../assets/expressionism.png";
-import vorticismImage from "../assets/vorticism.png";
-import rayonismImage from "../assets/rayonism.png";
-import impressionismImage from "../assets/impressionism.png";
-import newObjectivityImage from "../assets/newObjectivity.png";
-import dadaismImage from "../assets/dada.png";
-import orphismImage from "../assets/orphism.png";
-import bauhausImage from "../assets/bauhaus.png";
-import postImpressionismImage from "../assets/postImpressionism.png";
-import suprematismImage from "../assets/suprematism.png";
-import surrealismImage from "../assets/surrealism.png";
-import symbolismImage from "../assets/symbolism.png";
-import neoPlasticismImage from "../assets/neoplasticism.png";
-import fauvismImage from "../assets/fauvism.png";
-import futurismImage from "../assets/futurism.png";
-import cubismImage from "../assets/cubism.png";
-import cuboFuturismImage from "../assets/cuboFuturism.png";
-import constructivismImage from "../assets/constructivism.png";
+import romanticismImage from "/romanticism.png";
+import realismImage from "/realism.png";
+import expressionismImage from "/expressionism.png";
+import vorticismImage from "/vorticism.png";
+import rayonismImage from "/rayonism.png";
+import impressionismImage from "/impressionism.png";
+import newObjectivityImage from "/newObjectivity.png";
+import dadaismImage from "/dada.png";
+import orphismImage from "/orphism.png";
+import bauhausImage from "/bauhaus.png";
+import postImpressionismImage from "/postImpressionism.png";
+import suprematismImage from "/suprematism.png";
+import surrealismImage from "/surrealism.png";
+import symbolismImage from "/symbolism.png";
+import neoPlasticismImage from "/neoplasticism.png";
+import fauvismImage from "/fauvism.png";
+import futurismImage from "/futurism.png";
+import cubismImage from "/cubism.png";
+import cuboFuturismImage from "/cuboFuturism.png";
+import constructivismImage from "/constructivism.png";
 
 // const Movements: MovementProps[] = [
 const Movements: Record<string, MovementProps> = {
